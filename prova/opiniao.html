@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<style>
+			div {
+				margin: 20px 0;
+			}
+			
+			input {
+				padding: 2px 8px;
+			}
+			
+			select {
+				padding: 2px 8px;
+			}
+			
+			button {
+				padding: 12px 8px;
+				background-color: red;
+				color: white;
+				border: none;
+				width: 150px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Dê sua opinião sobre o Gears of War</h2>
+		<form action=mailto:lucaspereiradelima2020@gmail.com method="post">
+				<div>
+					<label for="nome">Nome:</label>
+					<input type="text" id="nome" name="nome" required>
+					</div
+				<div>
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+		
+		<div>
+			<label for="jogo_favorito">Jogo favorito:</label>
+			<select name="jogo_favorito" id="jogo_favorito" required>
+				<option value="Gears_of_War">Gears of War</option>
+				<option value="Gears_of_War_2">Gears of War 2</option>
+				<option value="Gears_of_War_3">Gears of War 3</option>
+				<option value="Gears_of_War_4">Gears of War 4</option>
+				<option value="Gears_of_War_5">Gears of War 5</option>
+			</select>
+		</div>
+		
+		<div>
+			<label>Personagem favorito:</label>
+			
+			<input type="radio" id="marcus_fenix" name="personagem_favorito" value="Marcus_Fenix" checked>
+			<label for="marcus_fenix">Marcus Fenix</label>
+			
+			<input type="radio" id="dom_santiago" name="personagem_favorito" value="Dom_Santiago">
+			<label for="dom_santiago">Dom Santiago</label>
+			
+			<input type="radio" id="cole_train" name="personagem_favorito" value="Cole_Train">
+			<label for="cole_train">Cole Train</label>
+			
+			<input type="radio" id="damon_baird" name="personagem_favorito" value="Damon_Baird">
+			<label for="damon_baird">Damon Baird</label>
+			
+			<input type="radio" id="anya_strond" name="personagem_favorito" value="Anya_Stround">
+			<label for="anya_strond">Anya Stroud</label>
+		</div>
+		
+		<label for="mais_gosta">O que você mais gosta no Gears of War?</label>
+		<br>
+		<br>
+		<textarea id="mais_gosta" name="mais_gosta" rows="4" cols="50" required></textarea>
+		
+		<div>
+			<label for="sim">Deseja receber novidades sobre Gears of War?</label>
+			<input type="checkbox" id="sim" name="sim" value="Sim">
+		</div>
+		
+		<div>
+			<button type="submit">Enviar</button>
+		</div>
+	</form>
+</body>
+</html>

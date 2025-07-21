@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<style>
+	        p {
+				font-size: 22px;
+			}
+			
+			button {
+				padding: 10px 15px;
+				margin: 0 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2 style="text-align: center">Trilha Sonora Oficial</h2>
+		<p>A música que você ouve nesta página faz parte da trilha sonora épica de Gears of War 2 e Gears of War 3. Essa composição se destaca pela sua carga emocional intensa, combinando 	    	    perfeitamente com os momentos mais marcantes da história, especialmente aqueles que envolvem sacrifícios, perdas e decisões difíceis durante a guerra contra os Locusts.</p>
+		<p>A trilha cria uma atmosfera de melancolia e heroísmo, refletindo a luta da humanidade pela sobrevivência no planeta Sera. É um símbolo do peso que os personagens carregam ao longo da 	   jornada — especialmente Marcus Fenix e Dom Santiago.</p>
+		<p><i>Essa música toca em momentos chave, como cenas de despedida ou reflexão, e até hoje é lembrada pelos fãs como uma das mais impactantes da franquia.</i></p>
+		<audio id="musica" src="musica.mp3"></audio>
+		<div style="position: relative; top: 60">
+			<center>
+	            <button onclick="document.getElementById('musica').play()">Reproduzir Trilha</button>
+				<button onclick="document.getElementById('musica').volume+=0.1">Aumentar Volume</button>
+				<button onclick="document.getElementById('musica').volume-=0.1">Diminuir Volume</button>
+				<button onclick="document.getElementById('musica').pause()">Pausar Trilha</button>
+			</center>
+			
+			<center>
+				<img src="imagem-musica.jpg" width="70%" style="margin: 20px 0">
+			</center>
+		</div>
+	</body>
+</html>
